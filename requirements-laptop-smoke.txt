@@ -1,0 +1,19 @@
+# Lightweight laptop environment for code reading, imports, and CPU smoke tests.
+# Recommended Python: 3.8 or 3.9 to stay close to the training PC/runtime.
+# Install with the CPU PyTorch index to avoid pulling CUDA packages:
+# pip install --index-url https://download.pytorch.org/whl/cpu -r requirements-laptop-smoke.txt
+
+torch==2.1.2
+torchvision==0.16.2
+timm==0.6.12
+pytorch-lightning==2.0.0
+kornia<0.7
+
+numpy<2
+Pillow
+opencv-python-headless
+scikit-image
+PyYAML
+easydict
+tensorboardX
+tqdm

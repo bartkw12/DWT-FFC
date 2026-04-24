@@ -1,0 +1,36 @@
+# Full environment for the training/inference PC.
+# Recommended Python: 3.8.
+#
+# Install command for the CUDA-enabled PyTorch wheels below:
+# pip install -r requirements-pc-full.txt
+#
+# Notes:
+# - The repo README lists torch==1.10.0 and torchvision==0.9.0, but those two
+#   versions do not line up as a supported pair. The pins below use a practical
+#   CUDA 11.3 pairing for Ampere-class GPUs while keeping the rest of the stack
+#   close to the repo.
+# - If your PC already has a known-good torch/torchvision pair, keep that pair
+#   and use the rest of this file as the baseline for the non-PyTorch packages.
+
+--extra-index-url https://download.pytorch.org/whl/cu113
+
+torch==1.10.2+cu113
+torchvision==0.11.3+cu113
+timm==0.6.12
+pytorch-lightning==2.0.0
+kornia<0.7
+
+numpy<2
+Pillow
+opencv-python
+scikit-image
+scipy
+imageio
+albumentations
+PyYAML
+easydict
+omegaconf
+pandas
+matplotlib
+tensorboardX
+tqdm
