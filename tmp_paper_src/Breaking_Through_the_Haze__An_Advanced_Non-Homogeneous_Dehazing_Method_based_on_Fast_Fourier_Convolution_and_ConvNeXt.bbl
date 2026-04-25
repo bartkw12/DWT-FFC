@@ -1,0 +1,350 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{densehaze2019}
+C.O. Ancuti, C. Ancuti, M. Sbert, and R. Timofte.
+\newblock A benchmark for image dehazing with dense-haze and haze-free images.
+\newblock In {\em IEEE International Conference on Image Processing (ICIP)},
+  pages 1014--1018, 2019.
+
+\bibitem{nh-haze2020}
+C.O. Ancuti, C. Ancuti, and R. Timofte.
+\newblock A benchmark for image dehazing with dense-haze and haze-free images.
+\newblock In {\em IEEE international conference on image processing (ICIP)},
+  pages 1014--1018, 2019.
+
+\bibitem{ntire2018}
+C. Ancuti, C.O. Ancuti, R. Timofte, et~al.
+\newblock Ntire 2018 challenge on image dehazing: Methods and results.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 891--901, 2018.
+
+\bibitem{ntire2019}
+C.O. Ancuti, C. Ancuti, R. Timofte, et~al.
+\newblock Ntire 2019 image dehazing challenge report.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 2241--2253, 2019.
+
+\bibitem{ntire2020}
+C.O. Ancuti, C. Ancuti, F.A. Vasluianu, R. Timofte, et~al.
+\newblock Ntire 2020 challenge on nonhomogeneous dehazing.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, 2020.
+
+\bibitem{ntire2021}
+C.O. Ancuti, C. Ancuti, F.A. Vasluianu, R. Timofte, et~al.
+\newblock Ntire 2021 nonhomogeneous dehazing challenge report.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, 2021.
+
+\bibitem{ntire23}
+Codruta~O Ancuti, Cosmin Ancuti, Florin-Alexandru Vasluianu, and Radu Timofte.
+\newblock Ntire 2023 challenge on nonhomogeneous dehazing.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, 2023.
+
+\bibitem{nolocal-piror}
+D. Berman, T. Treibitz, and S. Avidan.
+\newblock Non-local image dehazing.
+\newblock In {\em CVPR}, pages 1674--1682, 2016.
+
+\bibitem{14}
+B. Cai, X. Xu, K. Jia, C. Qing, and D.Tao.
+\newblock An end-to-end system for single image haze removal.
+\newblock {\em IEEE Transactions on Image Processing}, 25(11):5187--5198, 2016.
+
+\bibitem{dehazing-deraining}
+D. Chen, M. He, Q. Fan, J. Liao, L. Zhang, D. Hou, L. Yuan, and G. Hua.
+\newblock Gated context aggregation network for image dehazing and deraining.
+\newblock In {\em IEEE winter conference on applications of computer vision},
+  pages 1375--1383, 2019.
+
+\bibitem{FFC}
+L. Chi, B. Jiang, and Y. Mu.
+\newblock Fast fourier convolution.
+\newblock {\em Advances in Neural Information Processing Systems},
+  33:4479--4488, 2020.
+
+\bibitem{Imagenet}
+J. Deng, W. Dong, R. Socher, L. Li, K. Li, and F. Li.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 248--255, 2009.
+
+\bibitem{fusion}
+H. Dong, J. Pan, L. Xiang, Z. Hu, X. Zhang, F. Wang, and M. Yang.
+\newblock Multi-scale boosted dehazing network with dense feature fusion.
+\newblock In {\em CVPR}, pages 2157--2167, 2020.
+
+\bibitem{VisionTransformer}
+A. Dosovitskiy, A.~Kolesnikov L.~Beyer, D. Weissenborn, X. Zhai, T.
+  Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit,
+  and N. Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock In {\em International Conference on Learning Representations}, 2021.
+
+\bibitem{DW-GAN}
+M. Fu, H. Liu, Y. Yu, J. Chen, and K. Wang.
+\newblock Dw-gan:adiscrete wavelet transform gan for nonhomogeneous dehazing.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 203--212, 2021.
+
+\bibitem{Res2Net}
+S. Gao, M. Cheng, K. Zhao, X. Zhang, M. Yang, and P. Toll.
+\newblock Res2net: A new multi-scale backbone architecture.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  43(2):652--662, 2021.
+
+\bibitem{GAN}
+I. Goodfellow, P.~A. Jean, M. Mehdi, B. Xu, W.F. David, O. Sherjil, C. Aaron,
+  and B. Yoshua.
+\newblock Generative adversarial networks.
+\newblock {\em Association for Computing Machinery}, 63(11):139--144, 2020.
+
+\bibitem{ViT-followup2}
+K. Han, A. Xiao, E. Wu, J. Guo, C. Xu, and Y. Wang.
+\newblock Transformer in transformer.
+\newblock {\em Advances in Neural Information Processing Systems},
+  34:15908--15919, 2021.
+
+\bibitem{23}
+K. He, J. Sun, and X. Tang.
+\newblock Single image haze removal using dark channel prior.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  33(12):2341--2353, 2016.
+
+\bibitem{resnet}
+K. He, X. Zhang, S.Ren, and J. Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em CVPR}, pages 770--778, 2016.
+
+\bibitem{scatterdehaze2}
+M. Ju, Z. Gu, and D. Zhang.
+\newblock Single image haze removal based on the improved atmospheric
+  scattering model.
+\newblock {\em Neurocomputing}, 260:180--191, 2017.
+
+\bibitem{Liu_2020_ECCVW}
+L.Dai, X. Liu, C. Li, and J. Chen.
+\newblock Awnet: Attentive wavelet network for image isp.
+\newblock In {\em European Conference on Computer Vision Workshop (ECCVW)},
+  2020.
+
+\bibitem{28}
+B. Li, X. Peng, Z. Wang, J. Xu, and D. Feng.
+\newblock Single image haze removal using dark channel prior.
+\newblock In {\em CVPR}, pages 4770--4778, 2017.
+
+\bibitem{RESIDE2019}
+B. Li, W. Ren, D. Fu, D. Tao, D. Feng, W. Zeng, and Z. Wang.
+\newblock Benchmarking single-image dehazing and beyond.
+\newblock {\em IEEE Transactions on Image Processing}, 28(1):492--505, 2019.
+
+\bibitem{pixel-shuffle-attention}
+J. Li, Z. Pan, Q. Liu, and Z.Wang.
+\newblock Stacked u-shape network with channel-wise attention for salient
+  object detection.
+\newblock {\em IEEE TRANSACTIONS ON MULTIMEDIA}, 23:1397--1409, 2020.
+
+\bibitem{scatterdehaze1}
+Y. Li, Q. Miao, J. Song, Y. Quan, and W. Li.
+\newblock Single image haze removal based on haze physical characteristics and
+  adaptive sky region detection.
+\newblock {\em Neurocomputing}, 182:221--234, 2016.
+
+\bibitem{30}
+J. Liu, H. Wu, Y. Xie, Y. Qu, and L. Ma.
+\newblock Trident dehazing network.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, 2020.
+
+\bibitem{Liu_2019_ICCV}
+X. Liu, Y. Ma, Z. Shi, and J. Chen.
+\newblock Griddehazenet: Attention based multi-scale network for image
+  dehazing.
+\newblock In {\em IEEE/CVF International Conference on Computer Vision (ICCV)},
+  2019.
+
+\bibitem{Liu_2022_ITS}
+X. Liu, Z. Shi, Z. Wu, J. Chen, and G. Zhai.
+\newblock Griddehazenet+: An enhanced multi-scale network with intra-task
+  knowledge transfer for single image dehazing.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems}, 2022.
+
+\bibitem{Swin-T}
+Z. Liu, Y. Lin, Y. Cao, H. Hu, Y. Wei, Z. Zhang, S. Lin, and B. Guo.
+\newblock Swin transformer: Hierarchical vision transformer using shifted
+  windows.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 10012--10022, 2021.
+
+\bibitem{convnext}
+Z. Liu, H. Mao, C. Wu, C. Feichtenhofer, T. Darrell, and S. Xie.
+\newblock A convnet for the 2020s.
+\newblock In {\em CVPR}, pages 11976--11986, 2022.
+
+\bibitem{glama}
+Z. Lu, J. Jiang, J. Huang, G. Wu, and X. Liu.
+\newblock Glama: Joint spatial and frequency loss for general image inpainting.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 1301--1310, 2022.
+
+\bibitem{ASM2}
+E.J. McCartney.
+\newblock {\em Optics of the atmosphere: scattering by molecules and
+  particles}.
+\newblock 1976.
+
+\bibitem{31}
+G. Meng, Y. Wang, J. Duan, S. Xiang, and C. Pan.
+\newblock Efficient image dehazing with boundary constraint and contextual
+  regularization.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 617--624, 2013.
+
+\bibitem{ASM}
+W.~E.~K. Middleton.
+\newblock {\em Vision through the atmosphere}.
+\newblock University of Toronto Press, 1952.
+
+\bibitem{transfer-learning1}
+S.J. Pan and Q. Yang.
+\newblock A survey on transfer learning.
+\newblock {\em IEEE Transactions on knowledge and data engineering},
+  22(10):1345--1359, 2010.
+
+\bibitem{36}
+X. Qin, Z. Wang, Y. Bai, X. Xie, and H. Jia.
+\newblock Ffa-net: Feature fusion attention network for single image dehazing.
+\newblock In {\em Proceedings of the AAAI Conference on Artiﬁcial
+  Intelligence}, pages 11908--11915, 2020.
+
+\bibitem{38}
+W. Ren, L. Ma, J. Zhang, J. Pan, X. Cao, W. Liu, and M. Yang.
+\newblock Gated fusion network for single image dehazing.
+\newblock In {\em CVPR}, pages 3253--3261, 2018.
+
+\bibitem{U-Net}
+O. Ronneberger, P. Fischer, and T. Brox.
+\newblock Unet: Convolutional networks for biomedical image segmentation.
+\newblock In {\em International Conference on Medical image computing and
+  computer-assisted intervention}, page 234–241, 2015.
+
+\bibitem{VGG-16}
+K. Simonyan and A. Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{object-detection}
+V.~A. Sindagi, P. Oza, R. Yasarla, and V.M. Patel.
+\newblock Prior-based domain adaptive object detection for hazy and rainy
+  conditions.
+\newblock In {\em ECCV}, pages 763--780, 2020.
+
+\bibitem{WSAMF-Net}
+X. Song, D. Zhou, W. Li, H. Ding, Y. Dai, and L. Zhang.
+\newblock Wsamf-net: Wavelet spatial attention-based multistream feedback
+  network for single image dehazing.
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  33(2):575--588, 2023.
+
+\bibitem{lama}
+R. Suvorov, E. Logacheva, A. Mashikhin, A. Remizova, A. Ashukha, A. Silvestrov,
+  N. Kong, H. Goka, K. Park, and V. Lempitsky.
+\newblock Resolution-robust large mask inpainting with fourier convolution.
+\newblock In {\em Proceedings of the IEEE/CVF Winter Conference on Applications
+  of Computer Vision}, pages 2149--2159, 2022.
+
+\bibitem{transfer-learning2}
+C. Tan, F. Sun, T. Kong, W. Zhang, C. Yang, and C. Liu.
+\newblock A survey on transfer learning.
+\newblock In {\em In Artificial Neural Networks and Machine Learning–ICANN
+  2018: 27th International Conference on Artificial Neural Networks}, pages
+  270--279, 2018.
+
+\bibitem{auto-driving}
+H. Wang, Y. Xu, Z. Wang, Y. Cai, L. Chen, and Y. Li.
+\newblock Centernet-auto: A multi-object visual detection algorithm for
+  autonomous driving scenes based on improved centernet.
+\newblock {\em IEEE Transactions on Emerging Topics in Computational
+  Intelligence}, pages 1--11, 2023.
+
+\bibitem{convnext2}
+S. Woo, S. Debnath, R. Hu, X. Chen, Z. Liu, I.S. Kweon, and S. Xie.
+\newblock Convnext v2: Co-designing and scaling convnets with masked
+  autoencoders.
+\newblock 2023.
+
+\bibitem{43}
+H. Wu, J. Liu, Y. Xie, Y. Qu, and L. Ma.
+\newblock Knowledge transfer dehazing network for nonhomogeneous dehazing.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, 2020.
+
+\bibitem{contrast2022}
+H. Wu, Y. Qu, S. Lin, J. Zhou, R. Qiao, Z. Zhang, Y. Xie, and L. Ma.
+\newblock Contrastive learning for compact single image dehazing.
+\newblock In {\em CVPR}, pages 10551--10560, 2022.
+
+\bibitem{frequencydehazing2022}
+H. Yu, N. Zheng, M. Zhou, J. Huang, Z. Xiao, and F. Zhao.
+\newblock Frequency and spatial dual guidance for image dehazing.
+\newblock In {\em ECCV}, pages 181--198, 2022.
+
+\bibitem{two-branch}
+Y. Yu, H. Liu, M. Fu, J. Chen, X. Wang, and K. Wang.
+\newblock A two-branch neural network for non-homogeneous dehazing via ensemble
+  learning.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 193--202, 2021.
+
+\bibitem{wavelete-gan}
+Y. Yu, F. Zhan, S. Lu, J. Pan, F. Ma, X. Xie, and C. Miao.
+\newblock Wavefill: A wavelet-based generation network for image inpainting.
+\newblock In {\em Proceedings of the IEEE/CVF international conference on
+  computer vision}, pages 14114--14123, 2021.
+
+\bibitem{ViT-followup1}
+L. Yuan, Y. Chen, T. Wang, W. Yu, Y. Shi, Z. Jiang, Francis~E.H. Tay, J. Feng,
+  and S. Yan.
+\newblock Tokens-to-token vit: Training vision transformers from scratch on
+  imagenet.
+\newblock In {\em Proceedings of the IEEE/CVF international conference on
+  computer vision}, pages 558--567, 2021.
+
+\bibitem{44}
+H. Zhang and V.M. Patel.
+\newblock Densely connected pyramid dehazing network.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 3194--3203, 2018.
+
+\bibitem{objectreview}
+Z. Zhao, P. Zheng, S. Xu, and X. Wu.
+\newblock Object detection with deep learning: A review.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  30(11):3212--3232, 2019.
+
+\bibitem{wavelete-domain}
+Z. Zhong, T. Shen, Y. Yang, Z. Lin, and C. Zhang.
+\newblock Joint sub-bands learning with clique structures for wavelet domain
+  super-resolution.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{47}
+Z. Zhou and Z. Shi.
+\newblock Cggan: a context‐guided generative adversarial network for single
+  image dehazing.
+\newblock {\em IET Image Processing}, 14(15):3982--3988, 2020.
+
+\bibitem{attenuation-prior}
+Q. Zhu, J. Mai, and L. Shao.
+\newblock A fast single image haze removal algorithm using color attenuation
+  prior.
+\newblock {\em IEEE TRANSACTIONS ON MULTIMEDIA}, 24(11):3522–3533, 2015.
+
+\bibitem{transfer-learning3}
+F. Zhuang, Z. Qi, K. Duan, D. Xi, Y. Zhu, H. Zhu, H. Xiong, and Q. He.
+\newblock A comprehensive survey on transfer learning.
+\newblock {\em Proceedings of the IEEE}, 109(1):43--76, 2020.
+
+\end{thebibliography}
