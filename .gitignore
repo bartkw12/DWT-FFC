@@ -17,3 +17,6 @@ dist/
 
 .DS_Store
 Thumbs.db
+
+weights/*.pkl
+weights/*.pth
