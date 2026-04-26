@@ -121,6 +121,13 @@ If torch reports a CPU-only build
 - Then verify again with:
   python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO CUDA')"
 - If your venv is Python 3.12 or another newer version, the exact wheels pinned in requirements-pc-full.txt may not exist for that Python version. In that case, create a new venv with Python 3.8 or 3.9 on the PC and install from requirements-pc-full.txt there.
+- If your venv is Python 3.10 or newer and `pip install -r .\requirements-pc-full.txt` fails on `torch==1.10.2+cu113`, that usually means the pinned CUDA wheel is not published for your Python version.
+- Best course of action:
+  create a new Python 3.8 or 3.9 venv on the PC and install from requirements-pc-full.txt there
+- This is the most reliable option because it stays closest to the repo's intended runtime.
+- Alternative for inference-only:
+  keep Python 3.10, install a newer CUDA-enabled torch/torchvision pair manually, then install the remaining non-PyTorch packages separately
+- The alternative can work, but it is less predictable than using Python 3.8 or 3.9 with the pinned PC requirements.
 - Also check that `nvidia-smi` works in PowerShell on the PC. If it does not, the NVIDIA driver/CUDA runtime setup on the PC needs attention before PyTorch can use the GPU.
 
 If you get a checkpoint not found error
