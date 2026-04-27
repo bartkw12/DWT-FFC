@@ -222,6 +222,7 @@ def run_tiled_inference(model, image_tensor, device, tile_size, tile_overlap, pa
   x_positions = compute_positions(image_width, tile_size, tile_overlap)
 
   autocast_enabled = use_amp and device.type == 'cuda'
+  warned_amp_fallback = False
   with torch.inference_mode():
     for top in y_positions:
       bottom = min(top + tile_size, image_height)
@@ -235,12 +236,19 @@ def run_tiled_inference(model, image_tensor, device, tile_size, tile_overlap, pa
           with torch.cuda.amp.autocast(enabled=autocast_enabled):
             prediction = model(tile_batch)
         except RuntimeError as error:
-          if 'out of memory' in str(error).lower():
+          if autocast_enabled and 'unsupported dtype half' in str(error).lower():
+            if not warned_amp_fallback:
+              print('AMP is not supported by the FFT layers in this model on the current PyTorch build. Falling back to full precision.')
+              warned_amp_fallback = True
+            autocast_enabled = False
+            prediction = model(tile_batch)
+          elif 'out of memory' in str(error).lower():
             raise RuntimeError(
               'CUDA out of memory during inference. '
               'Retry with a smaller --tile_size, such as 768 or 512.'
             ) from error
-          raise
+          else:
+            raise
 
         prediction = prediction.squeeze(0).float().cpu()
         prediction = prediction[:, :valid_height, :valid_width]
