@@ -222,6 +222,9 @@ def run_tiled_inference(model, image_tensor, device, tile_size, tile_overlap, pa
   x_positions = compute_positions(image_width, tile_size, tile_overlap)
 
   autocast_enabled = use_amp and device.type == 'cuda'
+  if autocast_enabled:
+    print('AMP was requested, but this model uses FFT layers that require full precision on the current PyTorch build. Running inference in full precision.')
+    autocast_enabled = False
   warned_amp_fallback = False
   with torch.inference_mode():
     for top in y_positions:

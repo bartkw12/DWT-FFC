@@ -69,13 +69,20 @@ What to expect
 
 Step 6: Run inference
 
+Important note about AMP
+- Do not use `--amp` as the default command for this model.
+- This repo uses FFT-based FFC layers, and on your current PyTorch build they do not support half precision.
+- If you use `--amp`, you may see:
+  RuntimeError: Unsupported dtype Half
+- Use full precision for inference unless you specifically confirm AMP works on your environment.
+
 Option A: Use validation_best.pkl
 Run:
-python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\validation_best.pkl
+python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\validation_best.pkl
 
 Option B: Use test_best.pkl
 Run:
-python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\test_best.pkl
+python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\test_best.pkl
 
 What to expect
 - The script should print the selected device, checkpoint, input folder, and output folder.
@@ -97,10 +104,16 @@ If you want to test with one image first
 
 If you get a CUDA out of memory error
 Run again with a smaller tile size:
-python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\validation_best.pkl --tile_size 768
+python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\validation_best.pkl --tile_size 768
 
 If that still fails, try:
-python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\validation_best.pkl --tile_size 512
+python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\validation_best.pkl --tile_size 512
+
+If you get `RuntimeError: Unsupported dtype Half`
+- You are almost certainly still using `--amp` somewhere in the command you ran.
+- Remove `--amp` and rerun.
+- Correct example:
+  python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\test_best.pkl
 
 If you get a missing package/import error
 - Your PC venv is missing one or more repo dependencies.
@@ -140,7 +153,7 @@ If you get an error about the ConvNeXt backbone file
 If you want to try the script without naming a checkpoint explicitly
 - This only works if the script can unambiguously detect a checkpoint in weights.
 - Command:
-  python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp
+  python test.py --input_dir .\input --output_dir .\test_result --device cuda:0
 - If multiple candidate checkpoint files are present, the script will ask you to pass --checkpoint explicitly.
 
 About using hazy images from the internet
@@ -154,7 +167,7 @@ Minimal run sequence
 3. git pull origin main
 4. Get-ChildItem .\weights
 5. Get-ChildItem .\input
-6. python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\validation_best.pkl
+6. python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --checkpoint .\weights\validation_best.pkl
 7. Get-ChildItem .\test_result
 
 If something fails
