@@ -1,0 +1,42 @@
+(dwt_ffc_py38) PS I:\Python\Research\Baselines\DWT-FFC> python test.py --input_dir .\input --output_dir .\test_result --device cuda:0 --amp --checkpoint .\weights\test_best.pkl
+Using device: cuda:0
+Using checkpoint: I:\Python\Research\Baselines\DWT-FFC\weights\test_best.pkl
+Reading images from: I:\Python\Research\Baselines\DWT-FFC\input
+Writing outputs to: I:\Python\Research\Baselines\DWT-FFC\test_result
+Tile size: 1024, overlap: 128, pad multiple: 16
+[1/2] Processing anniiikaa-road-4878453_1920.jpg
+Traceback (most recent call last):
+  File "test.py", line 314, in <module>
+    main()
+  File "test.py", line 297, in main
+    prediction = run_tiled_inference(
+  File "test.py", line 236, in run_tiled_inference
+    prediction = model(tile_batch)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\model_convnext.py", line 484, in forward
+    dwt_branch=self.dwt_branch(input)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\model_convnext.py", line 226, in forward
+    out3_ffc= self.FFCResNet(out3)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\myFFCResblock0.py", line 47, in forward
+    x_l, x_g = self.initial(x)
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\saicinpainting\training\modules\ffc0.py", line 274, in forward
+    x_l, x_g = self.ffc(x)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\saicinpainting\training\modules\ffc0.py", line 245, in forward
+    out_xg = self.convl2g(x_l) + self.convg2g(x_g)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\saicinpainting\training\modules\ffc0.py", line 146, in forward
+    output = self.fu(x)
+  File "I:\Python\Research\Baselines\DWT-FFC\dwt_ffc_py38\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "I:\Python\Research\Baselines\DWT-FFC\saicinpainting\training\modules\ffc0.py", line 86, in forward
+    ffted = torch.fft.rfftn(x, dim=fft_dim, norm=self.fft_norm)
+RuntimeError: Unsupported dtype Half
